@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --light: AliceBlue;
+    --dark: black; 
+    --color: CornflowerBlue;
+  }
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: var(--dark);
+}
+
+
+header {
+  padding: 2rem ;
+  background: var(--color);
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+}
+
+main {
+  padding: 2rem 0;
+  background: var(--light);
+  text-align: center;
+}
+
+main h1 {
+  padding: 1rem;
+}
+
+p {
+  padding: 1rem 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-grow: .1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

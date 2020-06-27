@@ -1,0 +1,21 @@
+body {
+    background-color: #008fb3;
+}
+
+h1, h3, p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.converter {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.converter li {
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+}
+

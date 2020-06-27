@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ultimate Javascript Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="startTime()">
+
+  <h1>Ultimate Javascript Tutorial</h1>
+  <p id="fechayhora"></p>
+
+  <ul class="converter">
+    <li>
+      <h3>Convertidor Temperatura</h3>
+      <p>Introduce los grados en cualquier casilla:</p>
+      <p><input id="c" onkeyup="convert('C')"> º Celsius</p>
+      <p><input id="f" onkeyup="convert('F')"> º Fahrenheit</p>
+      <p><input id="k" onkeyup="convert('K')"> º Kelvin</p>
+    </li>
+    <li>
+      <h3>Calculador Seno/Coseno</h3>
+      <p>Introduce los grados en la primera casilla:</p>
+      <p><input id="angulo" onkeyup="calculateSinCon()"> grados</p>
+      <p><input id="seno"> seno</p>
+      <p><input id="coseno"> coseno</p>
+    </li>
+  </ul>
+   
+
+  <button type="button" onclick="showMyFunction()">Click me</button>
+  <p id="date"></p>
+  <p id="multiplication"></p>
+  <p id="sin"></p>
+
+</body>
+</html>
+
+
+

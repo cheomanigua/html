@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+}
+
+header {
+  background: salmon;
+}
+
+nav {
+  padding: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav li {
+  list-style: none;
+}
+
+h1, p {
+  padding: 1rem 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    flex-grow: .1;
+    display: flex;
+    justify-content: space-between;
+  }
+}
