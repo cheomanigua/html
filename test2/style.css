@@ -41,7 +41,7 @@ h1, p {
   }
 
   nav ul {
-    flex-grow: .1;
+    flex: .2;
     display: flex;
     justify-content: space-between;
   }
