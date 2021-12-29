@@ -1,0 +1,134 @@
+:root {
+  --primary: #3077d4;
+  --light: #EEE;
+  --dark: #034574;
+  --nav-height-desktop: 80px;
+  --nav-height-mobile: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 90px 20px 0;
+}
+
+header {
+  background-color: var(--primary);
+  height: var(--nav-height)-desktop;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: auto;
+}
+
+.nav-link {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: var(--nav-height-desktop);
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu li {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: var(--nav-height-desktop);
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu li a {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu li a:hover {
+  background-color: var(--dark);
+  transition: 0.5s;
+}
+
+.nav-toggle {
+  color: var(--light);
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
+  header {
+    height: var(--nav-height-mobile);
+  }
+
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: var(--nav-height-mobile);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: var(--dark);
+    position: fixed;
+    left: 0;
+    top: var(--nav-height-mobile);
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - var(--nav-height-mobile));
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu li{
+    line-height: var(--nav-height-mobile);
+  }
+
+  .nav-menu li a:hover {
+    background: none;
+    color: var(--primary);
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
