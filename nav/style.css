@@ -38,6 +38,11 @@ nav {
   text-decoration: none;
 }
 
+.nav-bars {
+  max-width: 20px;
+  line-height: var(--nav-height-desktop);
+}
+
 .logo {
   font-size: 30px;
   font-weight: bold;
