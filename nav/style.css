@@ -217,7 +217,7 @@ section {
   
   .profile-img {
     width: 100%;
-    max-width: 450px;
+    max-width: 350px;
     /* transform: scaleX(-1); */
   }
   
@@ -247,7 +247,7 @@ section {
 /* ******* PROFILE SECTION ENDS HERE ****** */
 
 
-/* ******* PROFILE START ENDS HERE ****** */
+/* ******* SKILLS SECTION START HERE ****** */
 .skills {
   max-width: 980px;
   margin: 0 auto;
@@ -287,4 +287,4 @@ section {
     margin: 20px;
   }
 }
-/* ******* PROFILE SECTION ENDS HERE ****** */
+/* ******* SKILLS SECTION ENDS HERE ****** */

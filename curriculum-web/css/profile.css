@@ -8,7 +8,7 @@
 }
 
 .profile-img-section {
-  position: relative;
+  position: relative; /*prevents the section to overflow the header on the right side */
 }
 
 .profile-img-line {
